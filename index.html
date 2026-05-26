@@ -417,7 +417,7 @@ footer {
         onkeydown="if(event.key==='Enter')tryUnlock()" oninput="clearErr()">
       <div class="pw-error" id="pwError"></div>
       <button class="pw-btn" onclick="tryUnlock()">🔓 Open this letter</button>
-      <p class="pw-hint" id="pwHint"></p>
+
     </div>
 
     <div class="letter-screen" id="letterScreen">
@@ -435,85 +435,85 @@ footer {
 // ============================================================
 // ✏️  YOUR LETTERS — edit everything in here!
 // password is case-insensitive
-// photo: set to a path like "photos/sad.jpg" or leave "" for placeholder
+// photo: set to a path like "sad.jpg" or leave "" for placeholder
 // ============================================================
 const letters = [
   {
-    color: "#ff6b35",
-    emoji: "😭",
+    color: "#6366f1",
+    emoji: "🥺",
     label: "Open when...",
-    title: "You're really upset",
-    hint: "Hint: our go-to comfort word",
-    password: "sunshine",
-    photo: "",
-    note: "Okay first of all — I see you and I love you.\n\nWhatever happened, it's valid to feel terrible right now. You don't have to fix it yet or be okay yet.\n\nBut I need you to remember: you've survived every bad day so far. 100% success rate. That's not nothing.\n\nCall me when you're ready. Or don't. I'll show up either way.",
-    sign: "— your person, always 🧡"
-  },
-  {
-    color: "#3b82f6",
-    emoji: "🌙",
-    label: "Open when...",
-    title: "You can't sleep",
-    hint: "Hint: something sleepy and cosmic",
-    password: "stardust",
-    photo: "",
-    note: "Put the phone down after this. I mean it.\n\nYour brain is doing that thing where it replays every embarrassing moment from 2014 and also your entire to-do list simultaneously. Relatable.\n\nHere's your task: name 5 things you can physically feel right now. The blanket. The pillow. The air. Do it slowly.\n\nYou're safe. Nothing needs solving tonight. Rest.",
-    sign: "— go to sleep!! 😤💙"
-  },
-  {
-    color: "#10b981",
-    emoji: "🎉",
-    label: "Open when...",
-    title: "Something amazing happened",
-    hint: "Hint: the loudest celebration word",
-    password: "hooray",
-    photo: "",
-    note: "YOOOO LET'S GOOOO!!\n\nI am so stupidly proud of you right now. Like, I knew you could do it — I've always known — but seeing it actually HAPPEN??\n\nYou need to celebrate this properly. Not 'maybe tomorrow.' Tonight. Right now.\n\nTell everyone. Eat something good. Do your victory walk. You earned every single bit of this. 🏆",
-    sign: "— your hype person forever 🎊"
+    title: "You're feeling sad",
+    hint: "",
+    password: "never",
+    photo: "sad.jpg",
+    note: "kyu sad h? kya hua? do you wanna talk about it? Ring me if you want to talk about it baby. If not thodu saa me time karle phir call me. I promise I'll pick up at any time in any time zone.\n\nThore se aasu baha kar skin care toh tu kar hi leti hai. If you want to, but I don't want you to but still sometimes it makes you feel lighter :)",
+    sign: "Love you and I am always there ❤️"
   },
   {
     color: "#f59e0b",
-    emoji: "😤",
+    emoji: "🎉",
     label: "Open when...",
-    title: "You're so done with everything",
-    hint: "Hint: think of the word for a total reset",
-    password: "recharge",
-    photo: "",
-    note: "Same, honestly.\n\nSome days everything is just too much and everyone is too much and you just want everyone to leave you alone and also for life to be easier.\n\nThat's not weakness. That's being a human person with limits.\n\nYou're allowed to take a break. Cancel something. Say no to things. Order food instead of cooking. Do literally nothing for a bit.\n\nYou'll come back when you come back. I'll be here.",
-    sign: "— no judgment, ever 💛"
-  },
-  {
-    color: "#ec4899",
-    emoji: "🥱",
-    label: "Open when...",
-    title: "You're so bored",
-    hint: "Hint: something chaotic and fun",
-    password: "chaos",
-    photo: "",
-    note: "Okay this is embarrassing that you needed a letter for boredom but here we are.\n\nOptions:\n\n→ Text me immediately and we'll find something dumb to do\n→ Learn one random skill on YouTube (lock picking? origami?)\n→ Rearrange your furniture for no reason\n→ Make up a dramatic backstory for someone you saw today\n→ Start a tier list of something completely unimportant\n\nBoredom is basically your brain asking for stimulation. Give it something weird.",
-    sign: "— your chaos coordinator 🌀"
-  },
-  {
-    color: "#8b5cf6",
-    emoji: "💀",
-    label: "Open when...",
-    title: "You need to actually laugh",
-    hint: "Hint: the most chaotic animal",
-    password: "capybara",
-    photo: "",
-    note: "Okay. You need me to clown right now so here I am.\n\nRemember that one time you [fill in your most unhinged memory here]??? I think about that and lose it every single time.\n\nWe are genuinely not normal people and I think that's why we work so well as friends.\n\nIf this didn't make you laugh: search 'dog falls off couch compilation' or 'man falls into wedding cake' — you're welcome in advance. Works every time. I've tested this.",
-    sign: "— ur funnier friend (it's me) 😭💜"
+    title: "You're happy!",
+    hint: "",
+    password: "010604",
+    photo: "happy.jpg",
+    note: "Khush Hooke Meri yaad aayi? Yaa Maine hi bola ye kholne? Anyways, yayyyyy, I am so so so so so happy for you and proud of you alwayssss! I would have hugged you if we were still neighbours 😭\n\nBut yesss 🫂X♾️ for now. Call kar fatafat we need to celebrate asap baby.",
+    sign: "Love you keep killing and acing bitch ;)"
   },
   {
     color: "#ef4444",
-    emoji: "🫂",
+    emoji: "💢",
+    label: "Open when...",
+    title: "We fought",
+    hint: "",
+    password: "aadyachutiyahai",
+    photo: "fought.jpg",
+    note: "I hope tujhe ye kholne ki zarurat kabhi bhi naa pade. I mean it.\n\nIf we fought let's just get over with it. Maine koi chutiya sa bakwaas kar rahi hu toh pls curse me and tell me my older self is cursing her too.\n\nCALL ASAP",
+    sign: "— your idiot, always 💔"
+  },
+  {
+    color: "#ec4899",
+    emoji: "🫶",
     label: "Open when...",
     title: "You miss me",
-    hint: "Hint: what we always say to each other",
-    password: "always",
-    photo: "",
-    note: "Miss you too, dummy.\n\nSeriously though — the distance or the time apart or whatever it is doesn't change anything. You're still my person.\n\nEvery stupid inside joke, every 3am rant, every time we said 'okay I really have to go now' and then talked for another hour — it's all still there. None of that expires.\n\nStop being sad and text me right now actually.",
-    sign: "— I mean it, text me 📱❤️"
+    hint: "",
+    password: "missingyoutoo",
+    photo: "missme.jpg",
+    note: "kya hua darling? Call karlo naa Mujhe agar miss kar rahe hoo. Do not think about the time or how busy I might be.\n\nNever ever busy for you 😘",
+    sign: "— always yours 💕"
+  },
+  {
+    color: "#10b981",
+    emoji: "🥱",
+    label: "Open when...",
+    title: "You're bored",
+    hint: "",
+    password: "gossip",
+    photo: "bored.jpg",
+    note: "Bore ho raha hai? 😭 Kya karu mai entertain karne ke liye meri jaan ko? Go eat something first because half the time tera boredom bhook hota hai.\n\nThen either call me yaa random reels bhej mujhe till we both start laughing for no reason.\n\nAur agar social battery khatam hai then blanket ke andar ghus jaa, put on some comfort show and pretend I'm there annoying you continuously.",
+    sign: "Love youuuuu, now stop being boring and text me back 😡❤️"
+  },
+  {
+    color: "#8b5cf6",
+    emoji: "🫂",
+    label: "Open when...",
+    title: "You need a hug",
+    hint: "",
+    password: "soojao",
+    photo: "hug.jpg",
+    note: "Aaja idhar 🫂 I know sometimes words bilkul kaam nahi karte and you just need someone to hold you tightly and tell you everything will be okay. So consider this a longgg tight hug from me okay?\n\nClose your eyes for 2 minutes and imagine we're sitting together and I'm listening seriously while you rant about everything. You don't always have to act strong baby.\n\nDrink some water, take deep breaths and call me if you want. I'll sit with you even if you don't wanna talk at all ❤️",
+    sign: "— your hug is waiting 🫂"
+  },
+  {
+    color: "#ff6b35",
+    emoji: "😤",
+    label: "Open when...",
+    title: "You're irritated",
+    hint: "",
+    password: "metimechahiye",
+    photo: "irritated.jpg",
+    note: "Okayyyy who pissed you off now? 😭 Pehle toh breathe because I know tu gusse mei aur zyada cute lagti hai but also thodi scary.\n\nRant karna hai? Character assassination karni hai? Judge nahi karungi promise 😭 Call me and let it all out before you start overthinking and replaying everything in your head 400 times.\n\nAlso don't let one annoying person or one bad moment ruin your whole day okay? You're too pretty for stress lines 😡❤️",
+    sign: "Love you alwayssss 💛"
   }
 ];
 
@@ -536,7 +536,7 @@ function buildGrid() {
       <div class="card-body">
         <div class="card-label" style="color:${l.color}">${l.label}</div>
         <div class="card-title">${l.title}</div>
-        <div class="card-hint">${l.hint}</div>
+
         <div class="card-footer">
           <div class="lock-dot"></div>
           password locked
